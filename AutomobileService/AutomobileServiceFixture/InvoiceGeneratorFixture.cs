@@ -14,7 +14,6 @@ namespace AutomobileServiceFixture
         public void Invoice_should_genrate_properly()
         {
             InvoiceGenerator generator = new InvoiceGenerator();
-            
         }
         
     }

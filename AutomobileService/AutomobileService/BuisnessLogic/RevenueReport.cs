@@ -8,13 +8,12 @@ namespace AutomobileService
 {
     public class RevenueReport : IReport
     {
-        private double _revenue=0;
-        public RevenueReport(double _revenue)
+        private double _revenue;
+        public RevenueReport(double revenue)
         {
-            _revenue++;
+            _revenue = revenue;
         }
-        double Revenue => _revenue;
-
+        
         public override string ToString()
         {
             return $"Revenue: {_revenue}";

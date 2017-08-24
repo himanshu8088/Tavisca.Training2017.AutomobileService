@@ -42,11 +42,14 @@
   <ItemGroup>
     <Compile Include="BuisnessLogic\Invoice.cs" />
     <Compile Include="BuisnessLogic\InvoiceGenerator.cs" />
+    <Compile Include="BuisnessLogic\RecordManager.cs" />
+    <Compile Include="BuisnessLogic\ServiceProvider.cs" />
+    <Compile Include="BuisnessLogic\ShowroomManager.cs" />
     <Compile Include="Contracts\IReport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BuisnessLogic\ReportGenerator.cs" />
     <Compile Include="BuisnessLogic\RevenueReport.cs" />
-    <Compile Include="BuisnessLogic\ServiceManager.cs" />
+    <Compile Include="BuisnessLogic\Showroom.cs" />
     <Compile Include="BuisnessLogic\ServiceReport.cs" />
     <Compile Include="Constants\Services.cs" />
     <Compile Include="BuisnessLogic\Vehicle.cs" />

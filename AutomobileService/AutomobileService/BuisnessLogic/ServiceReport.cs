@@ -8,23 +8,16 @@ namespace AutomobileService
 {
     public class ServiceReport : IReport
     {
-        private Dictionary<Service, int> _serviceDictionary = new Dictionary<Service, int>()
-        {
-            { Service.Maintainence,0},
-            { Service.Rent,0},
-            { Service.Sell,0},
-            { Service.TestDrive,0}
-        };
+        private RecordManager _manager;
 
-        public ServiceReport(Service service)
+        public ServiceReport(RecordManager manager)
         {
-            _serviceDictionary[service]= _serviceDictionary[service]+1;
+            _manager = manager;
         }
-        Dictionary<Service, int> ServiceDictionary => _serviceDictionary;
 
         public override string ToString()
         {
-            return $"Maintainence:{ _serviceDictionary[Service.Maintainence]} Sell:{ _serviceDictionary[Service.Sell]} Rent:{ _serviceDictionary[Service.Rent]} TestDrive:{ _serviceDictionary[Service.TestDrive]}";
+            return $"Maintainence:{ _manager.ServiceDictionary[Service.Maintainence]} Sell:{ _manager.ServiceDictionary[Service.Sell]} Rent:{ _manager.ServiceDictionary[Service.Rent]} TestDrive:{ _manager.ServiceDictionary[Service.TestDrive]}";
         }
     }
 }
