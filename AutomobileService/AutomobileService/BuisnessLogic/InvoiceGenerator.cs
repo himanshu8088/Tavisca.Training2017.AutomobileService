@@ -8,7 +8,7 @@ namespace AutomobileService
 {
     public class InvoiceGenerator
     {
-        Invoice GenerateInvoice(Service type,Vehicle vehicle)
+        public Invoice GenerateInvoice(Service type,Vehicle vehicle)
         {
             Invoice bill = new Invoice();
             bill.Amount = GetAmount(type,vehicle);
