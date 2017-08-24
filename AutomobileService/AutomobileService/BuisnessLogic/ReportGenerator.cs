@@ -8,7 +8,7 @@ namespace AutomobileService
 {
     public class ReportGenerator
     {
-        string GenerateReport(IReport report)
+        public string GenerateReport(IReport report)
         {
             return report.ToString();
         }
