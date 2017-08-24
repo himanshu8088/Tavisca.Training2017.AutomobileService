@@ -20,5 +20,9 @@ namespace AutomobileService.BuisnessLogic
             vehicles.Add(vehicle);
             _showroom.Vehicles[tag]=vehicles;
         }
+        public void TakeOutVehicle(int code)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

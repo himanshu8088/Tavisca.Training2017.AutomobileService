@@ -8,9 +8,14 @@ namespace AutomobileService.BuisnessLogic
 {
     public class ServiceProvider
     {
-        public void ProvideService(Service type)
+        private ShowroomManager _manager;
+        public ServiceProvider(ShowroomManager manager)
         {
-            throw new NotImplementedException();
+            _manager = manager;
+        }
+        public void ProvideService(Service type,Vehicle vehicle)
+        {
+            _manager.TakeOutVehicle(vehicle.Code);
         }   
     }
 }
